@@ -129,18 +129,12 @@ button.b1 {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 17, 255);
   border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
-button.b1:hover {
-  background-color: #15ff00;
-  color: #fff;
-  transform: translateY(-7px);
-}
 
 button.b1:active {
   transform: translateY(-1px);
@@ -156,18 +150,12 @@ button.b2 {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 17, 255);
   border: none;
-  border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
-button.b2:hover {
-  background-color: #d85757;
-  color: #fff;
-  transform: translateY(-7px);
-}
 
 button.b2:active {
   transform: translateY(-1px);
@@ -183,18 +171,13 @@ button.b3 {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 17, 255);
   border: none;
-  border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
-button.b3:hover {
-  background-color: #fffb00;
-  color: #fff;
-  transform: translateY(-7px);
-}
+
 
 button.b3:active {
   transform: translateY(-1px);
