@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+body {
+  background-color: #db1818;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* h1
+{
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+} */
+
+.spinner {
+  height: 50px;
+  width: max-content;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1em;
+  color: #ffffff;
+  filter: drop-shadow(0 0 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner span {
+  animation: loading6454 1.75s ease infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.spinner span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.spinner span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.spinner span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.spinner span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+@keyframes loading6454 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: rgb(0, 0, 0);
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: rgb(0, 0, 0);
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: rgb(0, 0, 0);
+  color: #3700ff;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.card-header {
+  background-image: linear-gradient(163deg, #000983 0%, #000983 100%);
+  text-align: center;
+}
+.card {
+  background: transparent;
+  border: 2px solid #00ddfa;
+  box-shadow: 2px 2px 15px #00ddfa inset;
+}
+/* From uiverse.io */
+
+/*Button 1*/
+
+button.b1 {
+  padding: 1em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 17, 255);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button.b1:hover {
+  background-color: #15ff00;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button.b1:active {
+  transform: translateY(-1px);
+}
+
+/*Button 2*/
+
+button.b2 {
+  padding: 1em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 17, 255);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button.b2:hover {
+  background-color: #d85757;
+  box-shadow: 0px 15px 20px rgba(255, 2, 2, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button.b2:active {
+  transform: translateY(-1px);
+}
+
+/*Button 3*/
+
+button.b3 {
+  padding: 1em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 17, 255);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button.b3:hover {
+  background-color: #3866fc;
+  box-shadow: 0px 15px 20px rgba(27, 30, 223, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button.b3:active {
+  transform: translateY(-1px);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button.b3:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}

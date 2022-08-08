@@ -1,0 +1,127 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font-family: 'Montserrat', sans-serif;
+}
+.container-fluid header nav ul li a{
+  color: white !important;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+/* Set the image size*/
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ }
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 34rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.card
+{
+  background-color: #023047;
+  border: none;
+}
+.card-title
+{
+  font-weight: bold;
+  color: #fff;
+}
+.card-text
+{
+  color: #fff;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+/* FOOTER CONTENT
+-------------------------------------------------- */
+a.btn
+{
+  text-decoration: none;
+  border-radius: 0;
+  border: none;
+}
+footer.container
+{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}

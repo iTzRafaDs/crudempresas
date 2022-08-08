@@ -1,0 +1,96 @@
+<div class="card mt-5">
+    <div class="card-header text-white">Actualizar Empresa</div>
+    <div class="card-body">
+      <form (ngSubmit)="actualizarEmpresa(forma)" #forma="ngForm" class="row g-3">
+        <div class="col-md-6">
+          <label for="strNombre" class="form-label">Nombre</label>
+          <br>
+          <input
+            #inputStrNombre="ngModel"
+            type="text"
+            name="strNombre"
+            [ngClass]="{'is-invalid': inputStrNombre.touched && inputStrNombre.hasError('required')}"
+            [(ngModel)]="usuario.strNombre"
+            class="form-control"
+            id="strNombre"
+            value=""
+            required
+          />
+          <div class="invalid-feedback">El campo es requerido!</div>
+        </div>
+        <div class="col-md-6">
+          <label for="strRazonSocial" class="form-label">Razon Social</label>
+          <input
+            #inputStrRazonSocial="ngModel"
+            type="text"
+            name="strRazonSocial"
+            [ngClass]="{'is-invalid': inputStrRazonSocial.touched && inputStrRazonSocial.hasError('required')}"
+            [(ngModel)]="usuario.strRazonSocial"
+            class="form-control"
+            id="strRazonSocial"
+            value="form-control"
+            required
+          />
+          <div class="invalid-feedback">El campo es requerido!</div>
+        </div>
+        <div class="col-md-6">
+            <label for="strRFC" class="form-label">RFC</label>
+            <input
+              #inputStrRFC="ngModel"
+              type="text"
+              name="strRFC"
+              [ngClass]="{'is-invalid': inputStrRFC.touched && inputStrRFC.hasError('required')}"
+              [(ngModel)]="usuario.strRazonSocial"
+              class="form-control"
+              id="strRFC"
+              value="form-control"
+              required
+            />
+            <div class="invalid-feedback">El campo es requerido!</div>
+          </div>
+        <div class="col-md-6">
+          <label for="strDireccion" class="form-label">Direccion</label>
+          <input
+            type="text"
+            name="strDireccion"
+            [(ngModel)]="usuario.strDireccion"
+            class="form-control"
+            id="strDireccion"
+            value=""
+          />
+        </div>
+        <div class="col-md-6">
+            <label for="strUrlLogo" class="form-label">URL Logo</label>
+            <input
+              #inputStrUrlLogo="ngModel"
+              type="text"
+              name="strUrlLogo"
+              [ngClass]="{'is-invalid': inputStrUrlLogo.touched && inputStrUrlLogo.hasError('required')}"
+              [(ngModel)]="usuario.strUrlLogo"
+              class="form-control"
+              id="strUrlLogo"
+              value="form-control"
+              required
+            />
+            <div class="invalid-feedback">El campo es requerido!</div>
+          </div>
+          <div class="col-md-6">
+            <label for="strPais" class="form-label">Pais</label>
+            <input
+              type="text"
+              name="strPais"
+              [(ngModel)]="usuario.strPais"
+              class="form-control"
+              id="strPais"
+              value=""
+            />
+          </div>
+        <div class="col-12 text-center">
+          <button class="b4" type="submit" [disabled]="forma.invalid">Actualizar</button>
+          <button style="margin-left: 20px;" class="b5" type="button" (click)="limpiarForma(forma)">Limpiar</button>
+          <button style="margin-left: 20px;" class="b5" type="button" (click)="emitirActualizacion.emit()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
