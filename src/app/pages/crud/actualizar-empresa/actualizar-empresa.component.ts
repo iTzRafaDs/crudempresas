@@ -32,7 +32,7 @@ export class ActualizarEmpresaComponent implements OnInit {
       Swal.fire
       ({
         icon: "success",
-        text: "Se actualizó la empresa exitosamente"
+        text: "Los datos se han actualizado"
       });
       this.emitirActualizacion.emit();
     })
@@ -40,7 +40,7 @@ export class ActualizarEmpresaComponent implements OnInit {
       Swal.fire
       ({
         icon: "error",
-        text: "Ha habido un error al actualizar al empresa"
+        text: "UPS, parece que hubo un error, verifique los datos"
       });
     });
   }

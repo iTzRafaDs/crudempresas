@@ -54,11 +54,10 @@ export class CrudComponent implements OnInit {
   eliminar(empresa: EmpresaModel){
     Swal.fire({
       icon: "question",
-      title: `¿Estas seguro que deseas eliminar a ${empresa.strNombre}?`,
+      title: `¿Eliminar a ${empresa.strNombre}?`,
       showDenyButton: false,
       showCancelButton: true,
-      confirmButtonText: 'Si, estoy seguro',
-      denyButtonText: `Don't save`,
+      confirmButtonText: 'Eliminar',
       cancelButtonText: "Cancelar"
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
@@ -68,7 +67,7 @@ export class CrudComponent implements OnInit {
           Swal.fire
           ({
             icon: "success",
-            text: "Se elimino el usuario exitosamente"
+            text: "La empresa se ha eliminado de forma correcta"
           });
           this.obtenerEmpresas();
         })
@@ -76,7 +75,7 @@ export class CrudComponent implements OnInit {
           Swal.fire
           ({
             icon: "error",
-            text: "Ha habido un error al eliminar el usuario"
+            text: "intentelo nuevamente"
           });
         })
       }
@@ -85,8 +84,8 @@ export class CrudComponent implements OnInit {
 
   logo(url:string, name:string, text:string){
     Swal.fire({
-      title: 'Company name: ' + name,
-      text: 'Bussines Name: ' + text,
+      title: 'Compañia: ' + name,
+      text: 'Razon Social: ' + text,
       imageUrl: url,
       imageWidth: 400,
       imageHeight: 200,

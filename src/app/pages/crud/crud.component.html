@@ -9,15 +9,17 @@
     <br>
   <div class="container-fluid">
       <div class="row">
-          <div class="col-6" style="margin: auto auto;" *ngIf="!isShown" id="divshow">
+        <div class="col-4">
+          <div class="col-12" style="margin: auto auto;" *ngIf="!isShown" id="divshow">
               <app-registrar-empresa (emitirRegistro)="this.obtenerEmpresas()"></app-registrar-empresa>
           </div>
-          <div class="col-6" style="margin: auto auto;" *ngIf="isShown" id="divshow">
+          <div class="col-12" style="margin: auto auto;" *ngIf="isShown" id="divshow">
               <app-actualizar-empresa (emitirActualizacion)="this.restableceRegistro()" [idEmpresa]="idEmpresa"></app-actualizar-empresa>
           </div>
-          <div>
-              <div class="card mt-5">
-                  <div class="card-header text-white">Tabla Empresas
+        </div>
+        <div class="col-8">
+              <div class="card mt-5 ">
+                  <div class="card-header text-black" >Tabla Empresas
                     <!-- <button (click)="toggleShow()" type="button" class="b3" style="float: right;">Actualizar</button> -->
                   </div>
                   <div class="card-header">
@@ -31,21 +33,21 @@
                     </div>
                   </div>
                   <div class="card-body">
-                    <table class="table text-white">
+                    <table class="table text-black">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Nombre</th>
                           <th scope="col">Razon Social</th>
                           <th scope="col">RFC</th>
-                          <th scope="col">Dirección</th>
+                          <th scope="col">Direccion</th>
                           <th scope="col">Pais</th>
                           <th scope="col">Logo</th>
                           <th scope="col">Actualizar</th>
                           <th scope="col">Eliminar</th>
                         </tr>
                       </thead>
-                      <tbody class="table-group-divider text-white">
+                      <tbody class="table-group-divider text-black">
                         <tr *ngFor="let empresa of empresas | filter:searchText; let i = index">
                           <th scope="row">{{i+1}}</th>
                           <td>{{empresa.strNombre}}</td>
@@ -62,6 +64,7 @@
                   </div>
                 </div>
           </div>
+        </div>
       </div>
-  </div>
+  
   </body>

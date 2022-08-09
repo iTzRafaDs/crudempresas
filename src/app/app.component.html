@@ -52,58 +52,52 @@
   }
 </style>
 <div>
-<nav
-  class="navbar navbar-expand-md fixed-top"
-  style="background-color: #000000"
->
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: rgb(0, 255, 34); font-weight: bold;">RRR</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse"
-      aria-controls="navbarCollapse"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="nav navbar-nav navbar-center">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            href="#"
-            style="color: rgb(0, 255, 42); font-weight: bold;"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#row" style="color: rgb(12, 255, 4); font-weight: bold;">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/crud" style="color: rgb(0, 255, 13); font-weight: bold;">CRUD</a>
-        </li>
-      </ul>
-      <!-- <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-warning" type="submit">Search</button>
-      </form> -->
+  <nav
+    class="navbar navbar-expand-md fixed-top"
+    style="background-color: transparent"
+  >
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-center">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              style="color: rgb(0, 38, 255); font-weight: bold"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/crud"
+              style="color: rgb(0, 38, 255); font-weight: bold"
+              >CRUD</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<router-outlet></router-outlet>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
 <script type="text/javascript">
-  $(document).scroll(function(){
-    $('.navbar').toggleClass('scrolled', $(this).
-    scrollTop() > $('.navbar').height());
+  $(document).scroll(function () {
+    $(".navbar").toggleClass(
+      "scrolled",
+      $(this).scrollTop() > $(".navbar").height()
+    );
   });
 </script>
